@@ -1,0 +1,251 @@
+/* ==========Default css========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+/* ==========Header css========== */
+
+.header {
+    background-color: #f6f9f9;
+}
+
+.header .container .row .navbar .container ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #222;
+    text-transform: capitalize;
+    line-height: 70px;
+}
+
+
+/* ==========banner css ========== */
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::after {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(113, 120, 132, .5);
+    z-index: 2;
+}
+
+.banner .container .row .col .content {
+    position: relative;
+    z-index: 3;
+}
+
+.banner .container .row .col .content .heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 92px;
+    text-transform: capitalize;
+    margin-top: 200px;
+    position: relative;
+}
+
+.banner .container .row .col .content .heading span::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 53%;
+    top: 110%;
+    left: 24%;
+    background-color: #15a4fa;
+}
+
+.banner .container .row .col .content .writting {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-top: 52px;
+}
+
+.banner .container .row .col .content .button {
+    margin-top: 62px;
+}
+
+.banner .container .row .col .content .downarrow {
+    margin: 175px 0 90px 0;
+}
+
+
+/* ==========about css========== */
+
+.about {
+    background-color: #f6f9f9;
+}
+
+.about .container .row .heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 80px;
+    color: #2d3950;
+}
+
+.about .container .row .about_writting {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 38px 0 100px 0;
+    color: #a7a8a8;
+}
+
+
+/* ==========service css========== */
+
+.service .container .row .col {
+    position: absolute;
+    z-index: 1;
+}
+
+.service .container .row .box {
+    width: 94px;
+    height: 98px;
+    position: relative;
+    z-index: 2;
+    top: 0%;
+    left: 38%;
+    margin-top: 66px;
+}
+
+.service .container .row .box .layer_1 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #48baff;
+}
+
+.service .container .row .box .layer_2 {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #5fc3ff;
+}
+
+.service .container .row .box .icon {
+    position: relative;
+    z-index: 4;
+    font-size: 50px;
+    line-height: 98px;
+}
+
+.service .container .row .details .heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2d3950;
+}
+
+.service .container .row .details .writting {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 13px 39px 68px;
+    color: #999;
+}
+
+
+/* ==========portfolio css========== */
+
+.portfolio .container .row .heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 80px;
+    color: #2d3950;
+}
+
+.portfolio .container .row .underline {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 23px 0 83px 0;
+    color: #909090;
+}
+
+.portfolio .image {
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .image::after {
+    width: 99%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    content: '';
+    z-index: 2;
+    background-color: rgb(38, 165, 243, .7);
+    transition: all linear .3s;
+}
+
+.portfolio .image:hover::after {
+    opacity: 1;
+    height: 100%;
+}
+
+.portfolio .image button {
+    position: absolute;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.portfolio .image button.search {
+    top: 48%;
+    left: 36%;
+}
+
+.portfolio .image button.link {
+    top: 48%;
+    right: 39%;
+}
+
+.portfolio .image:hover button {
+    opacity: 1;
+}
