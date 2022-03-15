@@ -206,8 +206,12 @@ ul li {
     z-index: 1;
 }
 
+.portfolio .image img {
+    width: 100%;
+}
+
 .portfolio .image::after {
-    width: 99%;
+    width: 100%;
     height: 0%;
     top: 0;
     left: 0;
@@ -237,13 +241,15 @@ ul li {
 }
 
 .portfolio .image button.search {
-    top: 48%;
+    top: 50%;
     left: 36%;
+    transform: translateY(-50%)
 }
 
 .portfolio .image button.link {
-    top: 48%;
-    right: 39%;
+    top: 50%;
+    right: 37%;
+    transform: translateY(-50%)
 }
 
 .portfolio .image:hover button {
