@@ -5,3 +5,57 @@
         justify-content: end;
     }
 }
+
+@media(max-width: 1599px) {
+    .portfolio .image button.link {
+        right: 41%;
+    }
+    .portfolio .image button.search {
+        left: 39%;
+    }
+}
+
+@media(max-width: 1399px) {
+    .portfolio .image button.search {
+        left: 36%;
+    }
+}
+
+@media(max-width: 1199px) {
+    .portfolio .image button.search {
+        left: 34%;
+    }
+    .portfolio .image button.link {
+        right: 38%;
+    }
+}
+
+@media(max-width: 991px) {
+    .portfolio .image button.search {
+        left: 37%;
+    }
+}
+
+@media(max-width: 767px) {
+    .portfolio .image {
+        max-width: 468px;
+    }
+    .portfolio .image button.search {
+        left: 38%;
+    }
+    .portfolio .image button.link {
+        right: 44%;
+    }
+    .footer p {
+        text-align: center;
+    }
+    .footer .social_links {
+        text-align: center;
+    }
+}
+
+@media(max-width: 575px) {
+    .banner .container .row .col .content .heading {
+        font-size: 65px;
+    }
+}
